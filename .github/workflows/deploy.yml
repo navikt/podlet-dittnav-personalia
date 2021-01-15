@@ -6,11 +6,11 @@ on:
       - main
 
 env:
-  IMAGE: docker.pkg.github.com/${{ github.repository }}/podlet-template:${{ github.sha }}
-  LATEST_IMAGE: docker.pkg.github.com/${{ github.repository }}/podlet-template:latest
-  BASE_PATH: /arbeid/podlet-template
-  IMAGE_CACHE_RUNTIME: docker.pkg.github.com/${{ github.repository }}/podlet-template-build-cache-runtime
-  IMAGE_CACHE_BUILDER: docker.pkg.github.com/${{ github.repository }}/podlet-template-build-cache-builder
+  IMAGE: docker.pkg.github.com/${{ github.repository }}/podlet-dittnav-personalia:${{ github.sha }}
+  LATEST_IMAGE: docker.pkg.github.com/${{ github.repository }}/podlet-dittnav-personalia:latest
+  BASE_PATH: /person/podlet-dittnav-personalia
+  IMAGE_CACHE_RUNTIME: docker.pkg.github.com/${{ github.repository }}/podlet-dittnav-personalia-build-cache-runtime
+  IMAGE_CACHE_BUILDER: docker.pkg.github.com/${{ github.repository }}/podlet-dittnav-personalia-build-cache-builder
 
 jobs:
   test:
@@ -51,7 +51,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Login to DockerHub
+      - name: Login to GitHub packages
         uses: docker/login-action@v1
         with:
           registry: docker.pkg.github.com

@@ -1,4 +1,3 @@
-import "./App.css";
 import Panel from "nav-frontend-paneler";
 import Navn from "./components/navn";
 import Status from "./components/status";
