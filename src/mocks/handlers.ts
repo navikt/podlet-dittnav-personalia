@@ -1,4 +1,8 @@
 import get from "./msw-utils";
-import auth from "./auth.json";
+import navn from "./navn.json";
+import ident from "./navn.json";
 
-export const handlers = [get("https://api.nav.no/innloggingsstatus/auth", auth)];
+export const handlers = [
+  get("https://www.nav.no/person/dittnav-api/personalia/navn", navn),
+  get("https://www.nav.no/person/dittnav-api/personalia/ident", ident),
+];
