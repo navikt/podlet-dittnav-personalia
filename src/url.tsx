@@ -9,12 +9,12 @@ type EnvUrl = { development: string; production: string };
 
 const NAVN_URL: EnvUrl = {
   development: "https://www.nav.no/person/dittnav-api/personalia/navn",
-  production: "https://innloggingsstatus.dev.nav.no/person/innloggingsstatus/auth",
+  production: "https://www.dev.nav.no/person/dittnav-api/personalia/navn",
 };
 
 const IDENT_URL: EnvUrl = {
   development: "https://www.nav.no/person/dittnav-api/personalia/ident",
-  production: "https://innloggingsstatus.dev.nav.no/person/innloggingsstatus/auth",
+  production: "https://www.dev.nav.no/person/dittnav-api/personalia/ident",
 };
 
 export const navnUrl = NAVN_URL[getEnvironment()];
