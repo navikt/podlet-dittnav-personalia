@@ -3,6 +3,7 @@ import useSWR from "swr";
 import { fetcher, IdentResponse, NavnResponse } from "../api";
 import { identUrl, navnUrl } from "../url";
 import personikon from "../assets/person.svg";
+import "./Personalia.less";
 
 const Personalia = () => {
   const { data: personaliaNavn, error } = useSWR<NavnResponse>(navnUrl, fetcher);
