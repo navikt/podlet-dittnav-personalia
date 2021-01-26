@@ -2,8 +2,8 @@ import React from "react";
 import useSWR from "swr";
 import { fetcher, IdentResponse, NavnResponse } from "../api";
 import { identUrl, navnUrl } from "../url";
-import personikon from "../assets/person.svg";
 import "./Personalia.less";
+import PersonIkon from "../assets/PersonIkon";
 
 const Personalia = () => {
   const { data: personaliaNavn, error } = useSWR<NavnResponse>(navnUrl, fetcher);
@@ -13,7 +13,7 @@ const Personalia = () => {
 
   return (
     <div className="person-info">
-      <img className="person-info__ikon" src={personikon} alt="" />
+      <PersonIkon />
       <h1>{personalia}</h1>
     </div>
   );
