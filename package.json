@@ -51,7 +51,6 @@
     "test": "npm run lint && react-scripts test",
     "test-ci": "npm run lint && CI=true react-scripts test",
     "refresh": "rm -rf node_modules && rm package-lock.json && npm i",
-    "typeCheck": "tsc",
     "lint": "eslint --ext .tsx,.js,.ts,.jsx src",
     "podlet": "node podlet.js",
     "bump": "npx npm-check-updates --target minor -u && npm i"
