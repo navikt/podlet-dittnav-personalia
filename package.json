@@ -48,8 +48,8 @@
   "scripts": {
     "start": "rollup -c rollup.config.dev.js -w",
     "build": "rollup -c rollup.config.prod.js",
-    "test": "npm run lint && craco test",
-    "test-ci": "npm run lint && CI=true craco test",
+    "test": "npm run lint && react-scripts test",
+    "test-ci": "npm run lint && CI=true react-scripts test",
     "refresh": "rm -rf node_modules && rm package-lock.json && npm i",
     "typeCheck": "tsc",
     "lint": "eslint --ext .tsx,.js,.ts,.jsx src",
