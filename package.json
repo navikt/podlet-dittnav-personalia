@@ -5,7 +5,6 @@
   "dependencies": {
     "@metrics/prometheus-consumer": "3.0.1",
     "@podium/podlet": "4.4.14",
-    "@sentry/browser": "5.30.0",
     "classnames": "2.2.6",
     "express": "4.17.1",
     "less": "3.13.1",
