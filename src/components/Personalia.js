@@ -1,15 +1,15 @@
 import React from "react";
-import useSWR from "swr";
-import { fetcher } from "../api";
+import { useQuery } from "react-query";
 import { identUrl, navnUrl } from "../url";
-import "./Personalia.less";
+import { fetcher } from "../api";
 import PersonIkon from "../assets/PersonIkon";
+import "./Personalia.less";
 
 const Personalia = () => {
-  const { data: personaliaNavn, error } = useSWR(navnUrl, fetcher);
-  const { data: personaliaIdent } = useSWR(() => (error ? identUrl : null), fetcher);
+  const { data: personaliaNavn, isError } = useQuery(navnUrl, fetcher);
+  const { data: personaliaIdent } = useQuery(identUrl, fetcher, { enabled: isError });
 
-  const personalia = error ? personaliaIdent?.ident : personaliaNavn?.navn.toLowerCase();
+  const personalia = isError ? personaliaIdent?.ident : personaliaNavn?.navn.toLowerCase();
 
   return (
     <div className="person-info">
