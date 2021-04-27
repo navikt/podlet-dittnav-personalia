@@ -13,7 +13,7 @@
     "nav-frontend-lenker-style": "0.2.42",
     "nav-frontend-typografi": "2.0.39",
     "nav-frontend-typografi-style": "1.0.35",
-    "postcss": "8.2.8",
+    "postcss": "8.2.13",
     "prom-client": "13.1.0",
     "prop-types": "15.7.2",
     "react": "17.0.2",
