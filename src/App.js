@@ -11,7 +11,7 @@ const App = () => (
       <AlertStripe type="advarsel">
         <Undertittel>Denne siden er under utvikling</Undertittel>
         Du har kommet til en side som er under utvikling og bare skal prøves ut på utvalgte kontorer. Trykk
-        <Lenke href="https://www.nav.no/person/dittnav"> her</Lenke> for å gå til DittNAV.
+        <Lenke href="https://www.nav.no/person/dittnav"> her for å gå til Ditt NAV</Lenke>.
       </AlertStripe>
     </div>
     <Personalia />
