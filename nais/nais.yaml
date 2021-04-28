@@ -4,7 +4,7 @@ metadata:
   name: {{app}}
   namespace: {{namespace}}
   labels:
-    team: personbruker
+    team: {{team}}
     app: {{app}}
 spec:
   image: {{image}}
