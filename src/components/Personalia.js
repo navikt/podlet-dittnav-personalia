@@ -2,7 +2,7 @@ import React from "react";
 import { useQuery } from "react-query";
 import { identUrl, navnUrl } from "../url";
 import { fetcher } from "../api";
-import PersonIkon from "../assets/PersonIkon";
+import PersonIkonZ from "../assets/PersonIkon";
 import "./Personalia.less";
 
 const Personalia = () => {
@@ -13,7 +13,7 @@ const Personalia = () => {
 
   return (
     <div className="person-info">
-      <PersonIkon />
+      <PersonIkonZ />
       <h1>{personalia}</h1>
     </div>
   );
